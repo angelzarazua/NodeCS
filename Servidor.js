@@ -20,7 +20,8 @@ for (var k in interfaces) {
 }
 
 var HOST = addresses[0]
-var PORT = '4444'
+//var PORT = '4444'
+var PORT = normalizePort(process.env.PORT || '3000')
 var sockets = [];
 
 var ser = net.createServer(function(){
